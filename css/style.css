@@ -24,16 +24,6 @@
         --VioletBlue: hsla(256, 72%, 46%, 1);
         --persianBlue: hsla(241, 72%, 46%, 0);
 
-    
-        --gradient-primary: linear-gradient(
-        var(--clr-primary-400),
-        var(--clr-secondary-400)
-        );
-    
-        --gradient-to-transparent: linear-gradient(
-        var(--clr-primary-500),
-        hsl(var(--clr-secondary-hsl-500), 0)
-        );
         --fuentePrincipal: "HankenGrotesk", sans-serif;
     
         --fw-regular: 500;
@@ -73,20 +63,51 @@
         background-color: var(--darkGrayBlue);
     }
 
-    /*main*/
+/*main*/
 
+.tus-resultados {
+    background-image: linear-gradient(to bottom, var(--lightSlateBlue) 50%, var(--lightRoyalBlue) 100%);
+}
+.tus-resultados h1 {
+    color: var(--lightLavender);
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.tus-resultados__numero {
+    background-image: linear-gradient(to bottom, var(--VioletBlue) 50%, var(--persianBlue) 100%);
+    
+}
 
+.tus-resultados__span {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--white);
+}
 
-    /*Footer*/
+.tus-resultados__span2 {
+    color: var(--lightLavender);
+    opacity: 0.7 !important;
+    font-weight: 600;
+}
 
-    .attribution { 
-        font-size: 11px;
-        text-align: center; 
-    }
-    .attribution a {
-        color: hsl(228, 45%, 44%);
-        }
-    /*media queries*/
+.info {
+    color: var(--white);
+}
+.info__great {
+    font-weight: 600;
+}
+
+/*Footer*/
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*media queries*/
 
     @media (min-width: 600px) {
         body {
