@@ -10,14 +10,14 @@
 </head>
 <body>
   <main class="main">
-    <div class=" d-flex flex-column align-items-center justify-content-center">
+    <div class="contenedor__principal d-flex flex-column align-items-center justify-content-center rounded-bottom">
 
-      <div class="tus-resultados rounded-bottom d-flex flex-column align-items-center justify-content-center p-3" >
+      <div class=" tus-resultados d-flex flex-column align-items-center justify-content-center" >
         <h1 class="tus-resultados__titulo">Your Result</h1>
-        <p class="tus-resultados__numero rounded-circle d-flex flex-column align-items-center justify-content-center p-4"><span class="tus-resultados__span">76</span> <span class="tus-resultados__span2 opacity-25">of 100</span></p>
+        <p class="tus-resultados__numero rounded-circle d-flex flex-column align-items-center justify-content-center"><span class="tus-resultados__span">76</span> <span class="tus-resultados__span2 opacity-25">of 100</span></p>
 
         <div class="d-flex align-items-center justify-content-center flex-column info">
-          <p class="info__great fs-2">Great</p>
+          <p class="info__great ">Great</p>
           <p class="info__parrafo text-center">
             You scored higher than 65% of the people who have taken these
             tests.
@@ -25,53 +25,69 @@
         </div>
       </div>
       
-      <div class="contenedor-sumary">
-        <h2>Sumary</h2>
-        <div class="alert alert-primary" role="alert">
-          <div class="">
-            <img src="assets/images/icon-memory.svg" />
-            <h3 class="">
+      <div class=" contenedor-sumary d-flex flex-column">
+        <h2 class="sumary-principalh1">Summary</h2>
+
+        <div class="sumary alert alert-primary d-flex justify-content-between align-items-center" role="alert" >
+          <div class="d-flex align-items-center gap-1">
+            <img src="assets/images/icon-reaction.svg" class="sumary__imagen" />
+            <h3 class="sumary__titulo">
               Reaction
+            </h3>
+          </div>
+          <div class="d-flex sumary__numero gap-2 justify-content-between">
+            <span class="sumary__span">80</span>
+            <span class="sumary__span-barra">/</span>
+            <span class="sumary__span-numero">100</span>
+          </div>
+
+        </div>
+        <div class="sumary alert alert-primary d-flex justify-content-between align-items-center" role="alert">
+          <div class="d-flex align-items-center gap-1">
+            <img src="assets/images/icon-memory.svg" class="sumary__imagen" />
+            <h3 class="sumary__titulo">
+              Memory
             </h3>
 
           </div>
-          <p class=""><span>80</span> / 100</p>
+          <div class="d-flex sumary__numero gap-2 justify-content-between">
+            <span class="sumary__span">80</span>
+            <span class="sumary__span-barra">/</span>
+            <span class="sumary__span-numero">100</span>
+          </div>
 
         </div>
-        <div class="alert alert-primary" role="alert">
-          <div class="">
-            <img src="assets/images/icon-reaction.svg" />
-            <h3 class="">
-              Reaction
+        <div class="sumary alert alert-primary d-flex justify-content-between align-items-center" role="alert">
+          <div class="d-flex align-items-center gap-1">
+            <img src="assets/images/icon-verbal.svg" class="sumary__imagen" />
+            <h3 class="sumary__titulo">
+              Verbal
             </h3>
 
           </div>
-          <p class=""><span>80</span> / 100</p>
+          <div class="d-flex sumary__numero gap-2 justify-content-between">
+            <span class="sumary__span">80</span>
+            <span class="sumary__span-barra">/</span>
+            <span class="sumary__span-numero">100</span>
+          </div>
 
         </div>
-        <div class="alert alert-primary" role="alert">
-          <div class="">
-            <img src="assets/images/icon-verbal.svg" />
-            <h3 class="">
-              Reaction
+        <div class="sumary alert alert-primary d-flex justify-content-between align-items-center" role="alert">
+          <div class="d-flex align-items-center gap-1">
+            <img src="assets/images/icon-visual.svg" class="sumary__imagen" />
+            <h3 class="sumary__titulo">
+              Visual
             </h3>
 
           </div>
-          <p class=""><span>80</span> / 100</p>
-
-        </div>
-        <div class="alert alert-primary" role="alert">
-          <div class="">
-            <img src="assets/images/icon-visual.svg" />
-            <h3 class="">
-              Reaction
-            </h3>
-
+          <div class="d-flex sumary__numero gap-2 justify-content-between">
+            <span class="sumary__span">80</span>
+            <span class="sumary__span-barra">/</span>
+            <span class="sumary__span-numero">100</span>
           </div>
-          <p class=""><span>80</span> / 100</p>
 
         </div>
-        <button type="button" class="btn btn-primary">Continue</button>
+        <button type="button" class="btn btn-primary p-4 fw-bolder">Continue</button>
       </div>
       
     </div>

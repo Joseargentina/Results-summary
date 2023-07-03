@@ -7,9 +7,13 @@
     
     :root {
         --LightRed: hsl(0, 100%, 67%);
-        --orangeYellow: hsl(256, 72%, 46%);
-        --greenTeal: hsl(241, 81%, 54%);
+        --LightRed-2: hsla(0, 100%, 67%, 0.103);
+        --orangeYellow: hsl(39, 100%, 56%);
+        --orangeYellow-2: hsla(39, 100%, 56%, 0.103);
+        --greenTeal: hsl(166, 100%, 37%);
+        --greenTeal-2: hsla(166, 100%, 37%, 0.103);
         --cobaltBlue: hsl(241, 72%, 46%);
+        --cobaltBlue-2: hsla(241, 72%, 46%, 0.103);
     
         --white: hsl(0, 0%, 100%);
         --paleBlue: hsl(221, 100%, 96%);
@@ -48,11 +52,16 @@
         margin: 0;
         padding: 0;
     }
+    html {
+        font-size: 62.5%;
+    }
     
     body {
         font-family: var(--fuentePrincipal);
-        font-size: var(--fs-400);
+        font-size: 1.8rem;
         color: var(--clr-neutral-700);
+        width: 100%;
+        line-height: 1.5;
     }
     
     img {
@@ -61,25 +70,33 @@
     }
     .btn {
         background-color: var(--darkGrayBlue);
+        border-radius: 100vw;
+        font-size: 1.6rem;
+        margin: 1rem 0;
     }
 
 /*main*/
 
+
 .tus-resultados {
-    background-image: linear-gradient(to bottom, var(--lightSlateBlue) 50%, var(--lightRoyalBlue) 100%);
+    background-image: linear-gradient(to bottom, var(--lightSlateBlue) 20%, var(--lightRoyalBlue) 100%);
+    border-bottom-right-radius: 7%;
+    border-bottom-left-radius: 7%;
+    padding: 3rem 4rem 4rem 4rem;
 }
 .tus-resultados h1 {
     color: var(--lightLavender);
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 2.8rem;
 }
 .tus-resultados__numero {
     background-image: linear-gradient(to bottom, var(--VioletBlue) 50%, var(--persianBlue) 100%);
-    
+    padding: 3.8rem;
 }
 
 .tus-resultados__span {
-    font-size: 3.5rem;
+    font-size: 4.8rem;
     font-weight: 600;
     color: var(--white);
 }
@@ -87,6 +104,7 @@
 .tus-resultados__span2 {
     color: var(--lightLavender);
     opacity: 0.7 !important;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -95,6 +113,66 @@
 }
 .info__great {
     font-weight: 600;
+    font-size: 2.3rem;
+    margin-top: 2rem;
+}
+.info__parrafo {
+    text-align: center;
+    margin: 0 auto;
+    color: var(--lightLavender);
+    font-size: 1.7rem;
+    
+}
+
+/*sumary*/
+.contenedor-sumary {
+    margin: 2rem 0;
+    width: 85%;
+}
+.sumary-principalh1 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.sumary {
+    border-style: none;
+    padding: 1.5rem;
+    border-radius: 5%;
+    margin-bottom: 1.5rem;
+}
+.sumary:nth-child(2) {
+    color: var(--LightRed);
+    background-color: var(--LightRed-2);
+}
+.sumary:nth-child(3) {
+    color: var(--orangeYellow);
+    background-color: var(--orangeYellow-2);
+}
+.sumary:nth-child(4) {
+    color: var(--greenTeal);
+    background-color: var(--greenTeal-2);
+}
+.sumary:nth-child(5) {
+    color: var(--cobaltBlue);
+    background-color: var(--cobaltBlue-2);
+}
+
+.sumary__titulo,
+.sumary__numero {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.sumary__imagen {
+    height: 2.2rem;
+}
+.sumary__span {
+    color: #000;
+}
+.sumary__span-barra,
+.sumary__span-numero {
+    color: grey;
+    opacity: 0.5;
 }
 
 /*Footer*/
@@ -109,10 +187,17 @@
 
 /*media queries*/
 
-    @media (min-width: 600px) {
-        body {
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        }
+@media (min-width: 768px) {
+    body {
+    min-height: 100vh;
+    display: grid;
+    align-items: flex-end;
+    }
+
+    .contenedor__principal {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        max-width: 50%;
+        margin: 0 auto;
+    }
     }
