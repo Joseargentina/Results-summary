@@ -192,6 +192,7 @@
     min-height: 100vh;
     display: grid;
     align-items: flex-end;
+    background-color: #e1e1e1;
     }
 
     .contenedor__principal {
@@ -199,5 +200,21 @@
         grid-template-columns: 1fr 1fr !important;
         max-width: 50%;
         margin: 0 auto;
+        overflow: hidden;
+        border-radius: 5% !important;
+        height: 45rem;
+        background-color: var(--white);
     }
+
+    .tus-resultados {
+        border-radius: 5% !important;
+        height: 46rem;
     }
+    .contenedor-sumary {
+        width: 100%;
+        border-top-right-radius:5% !important ;
+        border-bottom-right-radius:5% !important ;
+        background-color: var(--white);
+        padding: 1.5rem;
+    }
+}
