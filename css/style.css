@@ -2,7 +2,7 @@
     font-family: "HankenGrotesk";
     font-display: swap;
     font-weight: 500 700 800;
-    src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+    src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
     }
     
     :root {
@@ -79,9 +79,9 @@
 
 
 .tus-resultados {
-    background-image: linear-gradient(to bottom, var(--lightSlateBlue) 20%, var(--lightRoyalBlue) 100%);
-    border-bottom-right-radius: 7%;
+    background-image: linear-gradient(35deg, var(--lightRoyalBlue) 5%, var(--lightSlateBlue) 95%);
     border-bottom-left-radius: 7%;
+    border-bottom-right-radius: 7%;
     padding: 3rem 4rem 4rem 4rem;
 }
 .tus-resultados h1 {
@@ -96,8 +96,8 @@
 }
 
 .tus-resultados__span {
-    font-size: 4.8rem;
-    font-weight: 600;
+    font-size: 5rem;
+    font-weight: 700;
     color: var(--white);
 }
 
@@ -137,7 +137,7 @@
 .sumary {
     border-style: none;
     padding: 1.5rem;
-    border-radius: 5%;
+    border-radius: 8%;
     margin-bottom: 1.5rem;
 }
 .sumary:nth-child(2) {
@@ -198,23 +198,29 @@
     .contenedor__principal {
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;
-        max-width: 50%;
+        max-width: 40%;
         margin: 0 auto;
         overflow: hidden;
         border-radius: 5% !important;
-        height: 45rem;
+        height: 46rem;
+        min-width: 60rem;
         background-color: var(--white);
     }
 
     .tus-resultados {
-        border-radius: 5% !important;
+        border-radius: 6% !important;
         height: 46rem;
+        padding: 4rem 4rem;
+        text-align: center;
+        justify-content: center !important;
     }
+    
+    
     .contenedor-sumary {
         width: 100%;
         border-top-right-radius:5% !important ;
         border-bottom-right-radius:5% !important ;
         background-color: var(--white);
-        padding: 1.5rem;
+        padding: 0 3rem;
     }
 }
