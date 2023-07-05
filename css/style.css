@@ -79,7 +79,7 @@
 
 
 .tus-resultados {
-    background-image: linear-gradient(35deg, var(--lightRoyalBlue) 5%, var(--lightSlateBlue) 95%);
+    background-image: linear-gradient(to top, var(--lightRoyalBlue), var(--lightSlateBlue));
     border-bottom-left-radius: 7%;
     border-bottom-right-radius: 7%;
     padding: 3rem 4rem 4rem 4rem;
@@ -93,6 +93,9 @@
 .tus-resultados__numero {
     background-image: linear-gradient(to bottom, var(--VioletBlue) 50%, var(--persianBlue) 100%);
     padding: 3.8rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
 }
 
 .tus-resultados__span {
@@ -137,7 +140,7 @@
 .sumary {
     border-style: none;
     padding: 1.5rem;
-    border-radius: 8%;
+    border-radius: 5%;
     margin-bottom: 1.5rem;
 }
 .sumary:nth-child(2) {
@@ -212,7 +215,10 @@
         height: 46rem;
         padding: 4rem 4rem;
         text-align: center;
-        justify-content: center !important;
+        justify-content: space-around !important;
+    }
+    .tus-resultados h1 {
+        margin-bottom: 0;
     }
     
     
