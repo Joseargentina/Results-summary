@@ -207,7 +207,7 @@
         height: 46rem;
         min-width: 60rem;
         background-color: var(--white);
-        box-shadow: 1px 1px 10px 0rem hsla(0, 17%, 7%, 0.579);
+        box-shadow: 4px 6px 7px rgba(0, 0, 0, 0.3);
     }
 
     .tus-resultados {
